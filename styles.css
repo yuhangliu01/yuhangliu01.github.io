@@ -1,20 +1,21 @@
-/* Morandi Color Palette */
+/* Morandi Blue Color Palette */
 :root {
-    --morandi-beige: #D4C4B0;
-    --morandi-mauve: #A9897A;
-    --morandi-sage: #8B9E7C;
-    --morandi-terracotta: #A87860;
-    --morandi-dusty-blue: #7B8E9E;
-    --morandi-cream: #E8DFD5;
-    --morandi-taupe: #9D8B7E;
-    --morandi-muted-green: #9CAE8F;
+    /* Cool Blue Morandi Palette */
+    --morandi-light-blue: #B4C7E7;
+    --morandi-soft-blue: #8FA3D0;
+    --morandi-muted-blue: #6B7FA0;
+    --morandi-steel-blue: #5A6E8F;
+    --morandi-slate-blue: #4A5A7F;
+    --morandi-dusty-gray: #9BA5B5;
+    --morandi-pale-blue: #D4DEF0;
+    --morandi-deep-blue: #3F4D6B;
     
     /* Text & Background */
-    --text-primary: #3D3D3D;
-    --text-secondary: #6B6B6B;
-    --bg-primary: #FAFAF8;
-    --bg-secondary: #F4F0EB;
-    --border-color: #E4DDD3;
+    --text-primary: #2C3E50;
+    --text-secondary: #5A6C7D;
+    --bg-primary: #F8FAFC;
+    --bg-secondary: #EEF2F9;
+    --border-color: #D9E3F0;
     
     /* Transitions */
     --transition: all 0.3s ease;
@@ -62,7 +63,7 @@ body {
 .nav-brand {
     font-size: 20px;
     font-weight: 600;
-    color: var(--morandi-taupe);
+    color: var(--morandi-steel-blue);
     letter-spacing: 0.5px;
 }
 
@@ -82,13 +83,13 @@ body {
 }
 
 .nav-menu a:hover {
-    color: var(--morandi-terracotta);
-    border-bottom-color: var(--morandi-terracotta);
+    color: var(--morandi-muted-blue);
+    border-bottom-color: var(--morandi-muted-blue);
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--morandi-cream) 100%);
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--morandi-pale-blue) 100%);
     padding: 80px 20px;
     border-bottom: 1px solid var(--border-color);
 }
@@ -100,14 +101,14 @@ body {
 .hero h1 {
     font-size: 48px;
     font-weight: 700;
-    color: var(--morandi-taupe);
+    color: var(--morandi-steel-blue);
     margin-bottom: 10px;
     letter-spacing: -0.5px;
 }
 
 .hero .subtitle {
     font-size: 22px;
-    color: var(--morandi-mauve);
+    color: var(--morandi-muted-blue);
     margin-bottom: 8px;
     font-weight: 500;
 }
@@ -135,10 +136,10 @@ main {
 .section h2 {
     font-size: 32px;
     font-weight: 600;
-    color: var(--morandi-taupe);
+    color: var(--morandi-steel-blue);
     margin-bottom: 40px;
     padding-bottom: 15px;
-    border-bottom: 2px solid var(--morandi-beige);
+    border-bottom: 2px solid var(--morandi-light-blue);
 }
 
 /* About Section */
@@ -156,7 +157,7 @@ main {
 }
 
 .about-text strong {
-    color: var(--morandi-terracotta);
+    color: var(--morandi-muted-blue);
 }
 
 .research-interests {
@@ -176,7 +177,7 @@ main {
     content: "›";
     position: absolute;
     left: 0;
-    color: var(--morandi-sage);
+    color: var(--morandi-soft-blue);
     font-weight: bold;
     font-size: 18px;
 }
@@ -193,18 +194,19 @@ main {
     background: var(--bg-primary);
     padding: 30px;
     border-radius: 8px;
-    border-left: 4px solid var(--morandi-terracotta);
+    border-left: 4px solid var(--morandi-muted-blue);
     transition: var(--transition);
 }
 
 .highlight-card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
-    border-left-color: var(--morandi-sage);
+    box-shadow: 0 8px 16px rgba(90, 110, 143, 0.1);
+    border-left-color: var(--morandi-steel-blue);
+    background: var(--morandi-pale-blue);
 }
 
 .highlight-card h3 {
     font-size: 18px;
-    color: var(--morandi-taupe);
+    color: var(--morandi-steel-blue);
     margin-bottom: 12px;
     font-weight: 600;
 }
@@ -227,13 +229,13 @@ main {
     background: var(--bg-secondary);
     padding: 20px;
     border-radius: 8px;
-    border-left: 3px solid var(--morandi-dusty-blue);
+    border-left: 3px solid var(--morandi-soft-blue);
     transition: var(--transition);
 }
 
 .publication-item:hover {
-    background: var(--morandi-cream);
-    border-left-color: var(--morandi-terracotta);
+    background: var(--morandi-pale-blue);
+    border-left-color: var(--morandi-muted-blue);
 }
 
 .pub-title {
@@ -246,7 +248,7 @@ main {
 
 .pub-meta {
     font-size: 13px;
-    color: var(--morandi-terracotta);
+    color: var(--morandi-muted-blue);
     font-weight: 600;
 }
 
@@ -262,18 +264,19 @@ main {
     background: var(--bg-primary);
     padding: 30px;
     border-radius: 8px;
-    border-top: 3px solid var(--morandi-sage);
+    border-top: 3px solid var(--morandi-soft-blue);
     transition: var(--transition);
 }
 
 .project-card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
-    border-top-color: var(--morandi-terracotta);
+    box-shadow: 0 8px 16px rgba(90, 110, 143, 0.1);
+    border-top-color: var(--morandi-steel-blue);
+    background: var(--morandi-pale-blue);
 }
 
 .project-card h3 {
     font-size: 18px;
-    color: var(--morandi-taupe);
+    color: var(--morandi-steel-blue);
     margin-bottom: 12px;
     font-weight: 600;
 }
@@ -293,7 +296,7 @@ main {
 .btn-link {
     display: inline-block;
     text-decoration: none;
-    color: var(--morandi-terracotta);
+    color: var(--morandi-muted-blue);
     font-weight: 600;
     font-size: 15px;
     transition: var(--transition);
@@ -301,8 +304,8 @@ main {
 }
 
 .btn-link:hover {
-    color: var(--morandi-taupe);
-    border-bottom-color: var(--morandi-terracotta);
+    color: var(--morandi-steel-blue);
+    border-bottom-color: var(--morandi-muted-blue);
 }
 
 /* Contact Section */
@@ -326,19 +329,19 @@ main {
 .contact-link {
     display: inline-block;
     text-decoration: none;
-    color: var(--morandi-mauve);
+    color: var(--morandi-steel-blue);
     font-weight: 500;
     font-size: 15px;
     padding: 10px 20px;
-    border: 1px solid var(--morandi-beige);
+    border: 1px solid var(--morandi-soft-blue);
     border-radius: 4px;
     transition: var(--transition);
 }
 
 .contact-link:hover {
-    background-color: var(--morandi-beige);
+    background-color: var(--morandi-light-blue);
     color: var(--text-primary);
-    border-color: var(--morandi-mauve);
+    border-color: var(--morandi-muted-blue);
 }
 
 /* Footer */
