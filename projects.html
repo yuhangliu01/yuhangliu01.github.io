@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yuhang Liu - Projects">
+    <title>Projects - Yuhang Liu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Yuhang Liu</div>
+            <ul class="nav-menu">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#research">Research</a></li>
+                <li><a href="index.html#publications">Publications</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Research Projects</h1>
+                <p class="subtitle">Current and Ongoing Research Initiatives</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Active Research Projects</h2>
+                
+                <div class="projects-detail">
+                    <div class="project-detail-card">
+                        <h3>Correlation to Causality (C2C) Route</h3>
+                        <div class="project-meta">Long-term Research Agenda</div>
+                        <p>A systematic framework exploring how learning systems progressively transition from identifying correlations to establishing causal relationships through data diversity. This project encompasses multiple sub-themes:</p>
+                        <ul class="project-details-list">
+                            <li><strong>Data Diversity:</strong> Understanding how diverse data representations facilitate the discovery of causal structures</li>
+                            <li><strong>Causal Discovery:</strong> Developing methods to identify true causal relationships from observational data</li>
+                            <li><strong>Causal Reasoning:</strong> Building systems that can perform robust inference under causal assumptions</li>
+                            <li><strong>Theoretical Foundations:</strong> Establishing theoretical guarantees for causal inference in diverse data regimes</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-detail-card">
+                        <h3>LLM Interpretability and Reasoning</h3>
+                        <div class="project-meta">Current Focus</div>
+                        <p>Investigating the mechanisms behind interpretability, controllability, reasoning, and planning in large language models. Key research directions include:</p>
+                        <ul class="project-details-list">
+                            <li><strong>Concept Learning:</strong> Understanding what concepts LLMs learn from next token prediction</li>
+                            <li><strong>Interpretability:</strong> Developing methods to explain LLM decision-making processes</li>
+                            <li><strong>Controllability:</strong> Creating techniques to guide and constrain LLM behavior</li>
+                            <li><strong>Reasoning Mechanisms:</strong> Analyzing how LLMs perform complex reasoning tasks</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-detail-card">
+                        <h3>Single-Cell Perturbation Prediction</h3>
+                        <div class="project-meta">Collaborative Research</div>
+                        <p>Developing advanced machine learning methods for predicting cellular responses to genetic perturbations. This project bridges computational biology and deep learning:</p>
+                        <ul class="project-details-list">
+                            <li><strong>Representation Learning:</strong> Identifying optimal representations for cell state modeling</li>
+                            <li><strong>Causal Modeling:</strong> Understanding causal relationships in gene regulatory networks</li>
+                            <li><strong>Prediction Accuracy:</strong> Improving accuracy of cellular response predictions to interventions</li>
+                            <li><strong>Biological Insights:</strong> Extracting biological knowledge from learned models</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-detail-card">
+                        <h3>Latent Causal Models</h3>
+                        <div class="project-meta">Theoretical Research</div>
+                        <p>Advancing the theory and practice of learning causal models in latent spaces. Focus areas include:</p>
+                        <ul class="project-details-list">
+                            <li><strong>Weight-Variant Models:</strong> Identifying causal structures with variable edge weights</li>
+                            <li><strong>Identifiability:</strong> Establishing conditions under which latent causal models are identifiable</li>
+                            <li><strong>Efficient Learning:</strong> Developing sample-efficient algorithms for causal discovery</li>
+                            <li><strong>Robustness:</strong> Ensuring learned models generalize across different data distributions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Yuhang Liu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <style>
+        .projects-detail {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        .project-detail-card {
+            background: var(--bg-secondary);
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 4px solid var(--morandi-sage);
+            transition: var(--transition);
+        }
+
+        .project-detail-card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+            border-left-color: var(--morandi-terracotta);
+        }
+
+        .project-detail-card h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--morandi-taupe);
+            margin-bottom: 8px;
+        }
+
+        .project-meta {
+            font-size: 13px;
+            color: var(--morandi-terracotta);
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .project-detail-card p {
+            font-size: 15px;
+            color: var(--text-primary);
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        .project-details-list {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .project-details-list li {
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .project-details-list li:before {
+            content: "•";
+            position: absolute;
+            left: 5px;
+            color: var(--morandi-terracotta);
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .project-details-list strong {
+            color: var(--text-primary);
+        }
+
+        @media (max-width: 768px) {
+            .project-detail-card {
+                padding: 20px;
+            }
+
+            .project-detail-card h3 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</body>
+</html>
